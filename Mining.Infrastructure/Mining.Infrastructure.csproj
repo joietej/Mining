@@ -2,6 +2,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mining.Domain\Mining.Domain.csproj" />
+    <ProjectReference Include="..\Mining.cOMMON\Mining.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="csvhelper" Version="7.1.0" />
+    <PackageReference Include="structuremap" Version="4.6.1" />
   </ItemGroup>
 
   <PropertyGroup>
