@@ -10,23 +10,23 @@ namespace Mining.Infrastructure
 {
     public class TransactionImporter : ITransactionImporter
     {
-        public async Task<IEnumerable<Transaction>> ImportAsync(string filePath , string delimiter = "\t")
-        {
+        // public async Task<IEnumerable<Transaction>> ImportAsync(string filePath , string delimiter = "\t")
+        // {
 
-            var data = await File.ReadAllTextAsync(filePath);
-            var config = new Configuration
-            {
-                Delimiter = delimiter
-            };
+        //     var data = await File.ReadAllTextAsync(filePath);
+        //     var config = new Configuration
+        //     {
+        //         Delimiter = delimiter
+        //     };
 
-            using (var textReader = new StringReader(data))
-            {
-                return new CsvReader(textReader, config)
-                            .GetRecords<Transaction>()
-                            .ToList();
-            }
+        //     using (var textReader = new StringReader(data))
+        //     {
+        //         return new CsvReader(textReader, config)
+        //                     .GetRecords<Transaction>()
+        //                     .ToList();
+        //     }
 
-        }
+        // }
 
          public IEnumerable<Transaction> Import(string filePath , string delimiter = "\t")
         {
