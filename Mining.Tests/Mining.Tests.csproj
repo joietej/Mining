@@ -16,6 +16,7 @@
     <ProjectReference Include="..\Mining.Application\Mining.Application.csproj" />
     <ProjectReference Include="..\Mining.Domain\Mining.Domain.csproj" />
     <ProjectReference Include="..\Mining.Infrastructure\Mining.Infrastructure.csproj" />
+    <ProjectReference Include="..\Mining.Common\Mining.Common.csproj" />
   </ItemGroup>
 
 </Project>

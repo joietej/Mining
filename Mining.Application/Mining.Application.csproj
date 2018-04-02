@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mining.Domain\Mining.Domain.csproj" />
+    <ProjectReference Include="..\Mining.Common\Mining.Common.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
