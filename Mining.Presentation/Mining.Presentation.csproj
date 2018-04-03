@@ -6,7 +6,7 @@
     <Folder Include="wwwroot\"/>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6"/>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0"/>
     <PackageReference Include="structuremap" Version="4.6.1"/>
     <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="*"/>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="*"/>

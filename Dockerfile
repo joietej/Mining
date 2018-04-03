@@ -2,7 +2,9 @@ FROM microsoft/aspnetcore-build:2.0.0 AS build
 
 WORKDIR /code
 
-COPY ./Mining.Presentation .
+COPY . .
+
+WORKDIR /code/Mining.Presentation
 
 RUN dotnet restore
 
