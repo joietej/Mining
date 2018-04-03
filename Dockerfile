@@ -1,8 +1,17 @@
+FROM microsoft/aspnetcore-build:2.0.0 AS build
 
-FROM microsoft/aspnetcore:2 AS build-env
-LABEL Name=mining Version=0.0.1
-ARG source=.
+WORKDIR /code
+
+COPY ./Mining.Presentation .
+
+RUN dotnet restore
+
+RUN dotnet publish --output /output --configuration Release
+
+FROM microsoft/aspnetcore:2.0.0
+
+COPY --from=build /output /app
+
 WORKDIR /app
-EXPOSE 5000
-COPY $source .
-ENTRYPOINT dotnet Mining.dll
+
+ENTRYPOINT [ "dotnet", "Mining.Presentation.dll" ]
